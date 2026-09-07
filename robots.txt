@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://boltdoesthis.github.io/indie-agent-services/sitemap.xml
