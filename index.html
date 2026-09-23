@@ -84,6 +84,23 @@
       font-size: 1.02rem;
     }
 
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px 16px;
+      margin-top: 18px;
+    }
+    .hero-actions .btn { white-space: nowrap; }
+    .hero-secondary {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 10px;
+      font-size: 0.88rem;
+    }
+    .hero-secondary a { color: var(--muted); }
+    .hero-secondary a:hover { color: var(--accent); }
+
     .nav {
       display: flex;
       flex-wrap: wrap;
@@ -351,6 +368,30 @@
       margin-top: 8px;
     }
 
+    .checklists {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 12px;
+    }
+    .checklist {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+    }
+    .checklist h3 {
+      margin: 0 0 8px;
+      font-size: 0.98rem;
+    }
+    .checklist ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    .checklist li { margin-bottom: 5px; }
+    .checklist li::marker { color: var(--accent-dim); }
+
     footer {
       margin-top: 48px;
       padding-top: 20px;
@@ -381,6 +422,17 @@
           Fixed-scope micro-work for indie builders who have a README (or a half-written pitch)
           and need shippable files this week—not a retainer.
         </p>
+        <div class="hero-actions" aria-label="Start with a package">
+          <a class="btn"
+             href="mailto:boltdoesthis@gmail.com?subject=Landing%20page%20from%20README%20(%2449)&body=Product%20name%3A%0ALink%20to%20README%20or%20paste%20blurb%3A%0APreferred%20CTA%20URL%3A%0ADeadline%20(if%20any)%3A%0A">
+            Start with README → landing · $49
+          </a>
+          <span class="hero-secondary">
+            <a href="mailto:boltdoesthis@gmail.com?subject=Launch%20pack%20(%2479)&body=Product%20name%3A%0ALink%20to%20README%20or%20paste%20blurb%3A%0APreferred%20CTA%20URL%3A%0ABrand%20colors%20(optional)%3A%0ADeadline%20(if%20any)%3A%0A">Launch pack · $79</a>
+            <span aria-hidden="true">·</span>
+            <a href="mailto:boltdoesthis@gmail.com?subject=Custom%20agent%20skill%20pack%20(%2499)&body=Product%20name%3A%0AWhat%20should%20the%20skill%20help%20with%3A%0ATools%20you%20use%20(Cursor%2C%20Claude%2C%20etc.)%3A%0AExamples%20or%20docs%20links%3A%0ADeadline%20(if%20any)%3A%0A">Skill pack · $99</a>
+          </span>
+        </div>
       </div>
       <nav class="nav" aria-label="On this page">
         <a href="#packages">Packages</a>
@@ -448,6 +500,58 @@
         Payment details are arranged after scope is clear. Until payout rails are live,
         work starts once the email thread confirms deliverables and timeline.
       </p>
+    </section>
+
+    <section id="proof">
+      <h2>Free tools (proof of work)</h2>
+      <p>
+        Same brand, same style. Client-side only—no signup.
+        Try a tool before you buy a package.
+      </p>
+      <div class="proof">
+        <a class="row" href="https://boltdoesthis.github.io/readme-to-landing/" rel="noopener">
+          <span class="label">README → Landing</span>
+          <span class="hint">Paste a README, download a landing page</span>
+          <span class="arrow">open →</span>
+        </a>
+        <a class="row" href="https://boltdoesthis.github.io/changelog-to-og/" rel="noopener">
+          <span class="label">Changelog → OG</span>
+          <span class="hint">Release notes to social card + blurbs</span>
+          <span class="arrow">open →</span>
+        </a>
+        <a class="row" href="https://boltdoesthis.github.io/pricing-page-maker/" rel="noopener">
+          <span class="label">Pricing page maker</span>
+          <span class="hint">Build a pricing section and download HTML</span>
+          <span class="arrow">open →</span>
+        </a>
+        <a class="row" href="https://github.com/boltdoesthis/indie-agent-ship-kit-teaser" rel="noopener">
+          <span class="label">Indie Agent Ship Kit (teaser)</span>
+          <span class="hint">GitHub teaser repo for the wider kit</span>
+          <span class="arrow">open →</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="brief">
+      <h2>What you get / what you send</h2>
+      <div class="checklists">
+        <div class="checklist">
+          <h3>What you get</h3>
+          <ul>
+            <li>Shippable files matched to the package</li>
+            <li>One revision round for missed brief details</li>
+            <li>A clean handoff you can host yourself</li>
+          </ul>
+        </div>
+        <div class="checklist">
+          <h3>What you send</h3>
+          <ul>
+            <li>Product name and README link or short blurb</li>
+            <li>Preferred CTA URL and brand colors if useful</li>
+            <li>Deadline, plus any examples or constraints</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section id="how">
@@ -546,39 +650,11 @@
       </div>
     </section>
 
-    <section id="proof">
-      <h2>Free tools (proof of work)</h2>
-      <p>
-        Same brand, same style. Client-side only—no signup.
-        Try a tool before you buy a package.
-      </p>
-      <div class="proof">
-        <a class="row" href="https://boltdoesthis.github.io/readme-to-landing/" rel="noopener">
-          <span class="label">README → Landing</span>
-          <span class="hint">Paste a README, download a landing page</span>
-          <span class="arrow">open →</span>
-        </a>
-        <a class="row" href="https://boltdoesthis.github.io/changelog-to-og/" rel="noopener">
-          <span class="label">Changelog → OG</span>
-          <span class="hint">Release notes to social card + blurbs</span>
-          <span class="arrow">open →</span>
-        </a>
-        <a class="row" href="https://boltdoesthis.github.io/pricing-page-maker/" rel="noopener">
-          <span class="label">Pricing page maker</span>
-          <span class="hint">Build a pricing section and download HTML</span>
-          <span class="arrow">open →</span>
-        </a>
-        <a class="row" href="https://github.com/boltdoesthis/indie-agent-ship-kit-teaser" rel="noopener">
-          <span class="label">Indie Agent Ship Kit (teaser)</span>
-          <span class="hint">GitHub teaser repo for the wider kit</span>
-          <span class="arrow">open →</span>
-        </a>
-      </div>
-    </section>
-
     <footer>
       <span>Indie Agent Kit / boltdoesthis · faceless brand</span>
       <span>
+        <a href="https://github.com/boltdoesthis">GitHub org</a>
+        ·
         <a href="https://github.com/boltdoesthis/indie-agent-services">Repo</a>
         ·
         <a href="mailto:boltdoesthis@gmail.com">boltdoesthis@gmail.com</a>
