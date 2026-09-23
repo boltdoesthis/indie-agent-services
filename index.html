@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Indie Agent Services: Landing pages & launch assets</title>
-  <meta name="description" content="Ship landing pages and launch assets with agent-speed help. Honest indie rates. Email boltdoesthis@gmail.com. From Indie Agent Kit." />
+  <title>Indie Agent Services: Landing pages &amp; launch assets in 48h</title>
+  <meta name="description" content="Fixed-scope landing pages and launch assets for indie builders. $49–$99. Email the exact subject line. Faceless brand: Indie Agent Kit / boltdoesthis." />
   <meta name="theme-color" content="#0f1115" />
-  <meta property="og:title" content="Indie Agent Services: Landing pages & launch assets" />
-  <meta property="og:description" content="Ship landing pages and launch assets with agent-speed help. Packages from $49. Email boltdoesthis@gmail.com." />
+  <meta property="og:title" content="Indie Agent Services: Landing pages &amp; launch assets in 48h" />
+  <meta property="og:description" content="Fixed packages from $49. Email boltdoesthis@gmail.com with the exact subject line. Proof: free tools that run in your browser." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://boltdoesthis.github.io/indie-agent-services/" />
   <style>
@@ -75,12 +75,12 @@
       font-size: clamp(1.55rem, 4vw, 2.05rem);
       letter-spacing: -0.02em;
       line-height: 1.2;
-      max-width: 22ch;
+      max-width: 24ch;
     }
     .lede {
       margin: 0;
       color: var(--muted);
-      max-width: 48ch;
+      max-width: 50ch;
       font-size: 1.02rem;
     }
 
@@ -167,6 +167,22 @@
     }
     .card li { margin-bottom: 6px; }
     .card li::marker { color: var(--accent-dim); }
+
+    .subject-hint {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--muted);
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 6px 8px;
+      word-break: break-word;
+      line-height: 1.4;
+    }
+    .subject-hint strong {
+      color: var(--text);
+      font-weight: 600;
+    }
 
     .btn {
       display: inline-flex;
@@ -293,6 +309,40 @@
     .proof .hint { color: var(--muted); font-size: 0.88rem; }
     .proof .arrow { color: var(--accent); font-family: var(--mono); font-size: 0.85rem; }
 
+    .faq {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .faq details {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+    }
+    .faq summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--text);
+      list-style: none;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::before {
+      content: "+";
+      display: inline-block;
+      width: 1.1em;
+      color: var(--accent);
+      font-family: var(--mono);
+      margin-right: 6px;
+    }
+    .faq details[open] summary::before { content: "−"; }
+    .faq details p {
+      margin: 10px 0 4px;
+      color: var(--muted);
+      font-size: 0.94rem;
+      max-width: none;
+    }
+
     .note {
       font-size: 0.88rem;
       color: var(--muted);
@@ -326,15 +376,16 @@
     <header>
       <div class="brand">
         <span class="badge">Indie Agent Kit · boltdoesthis</span>
-        <h1>Ship landing pages and launch assets with agent-speed help</h1>
+        <h1>Landing pages &amp; launch assets in 48 hours</h1>
         <p class="lede">
-          Small paid micro-work for indie builders who already have a README
-          (or a half-written pitch) and need something shippable this week.
+          Fixed-scope micro-work for indie builders who have a README (or a half-written pitch)
+          and need shippable files this week—not a retainer.
         </p>
       </div>
       <nav class="nav" aria-label="On this page">
         <a href="#packages">Packages</a>
         <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
         <a href="#cta">Email</a>
         <a href="#proof">Free tools</a>
       </nav>
@@ -342,7 +393,10 @@
 
     <section id="packages">
       <h2>Packages</h2>
-      <p>Honest indie rates. Fixed scope. You get files, not a retainer.</p>
+      <p>
+        Honest indie rates. Fixed scope. You get files, not meetings.
+        Click a button—your mail app opens with the <strong style="color:var(--text)">exact subject line</strong> filled in.
+      </p>
       <div class="packages">
         <article class="card">
           <h3>Landing page from your README</h3>
@@ -350,11 +404,12 @@
           <ul>
             <li>One clean static landing page</li>
             <li>Built from your README or blurb</li>
-            <li>Mobile-friendly HTML you can host anywhere</li>
+            <li>Mobile-friendly HTML you host anywhere</li>
           </ul>
+          <p class="subject-hint">Subject: <strong>Landing page from README ($49)</strong></p>
           <a class="btn ghost"
              href="mailto:boltdoesthis@gmail.com?subject=Landing%20page%20from%20README%20(%2449)&body=Product%20name%3A%0ALink%20to%20README%20or%20paste%20blurb%3A%0APreferred%20CTA%20URL%3A%0ADeadline%20(if%20any)%3A%0A">
-            Email this package
+            Email this exact subject line
           </a>
         </article>
 
@@ -367,9 +422,10 @@
             <li>OG / social card (PNG + SVG)</li>
             <li>Short tweet and LinkedIn blurbs</li>
           </ul>
+          <p class="subject-hint">Subject: <strong>Launch pack ($79)</strong></p>
           <a class="btn"
              href="mailto:boltdoesthis@gmail.com?subject=Launch%20pack%20(%2479)&body=Product%20name%3A%0ALink%20to%20README%20or%20paste%20blurb%3A%0APreferred%20CTA%20URL%3A%0ABrand%20colors%20(optional)%3A%0ADeadline%20(if%20any)%3A%0A">
-            Email this package
+            Email this exact subject line
           </a>
         </article>
 
@@ -381,9 +437,10 @@
             <li>Prompts / checklists you can reuse</li>
             <li>Fits Cursor / Claude / similar agent workflows</li>
           </ul>
+          <p class="subject-hint">Subject: <strong>Custom agent skill pack ($99)</strong></p>
           <a class="btn ghost"
              href="mailto:boltdoesthis@gmail.com?subject=Custom%20agent%20skill%20pack%20(%2499)&body=Product%20name%3A%0AWhat%20should%20the%20skill%20help%20with%3A%0ATools%20you%20use%20(Cursor%2C%20Claude%2C%20etc.)%3A%0AExamples%20or%20docs%20links%3A%0ADeadline%20(if%20any)%3A%0A">
-            Email this package
+            Email this exact subject line
           </a>
         </article>
       </div>
@@ -397,18 +454,55 @@
       <h2>How it works</h2>
       <ol class="steps">
         <li>
-          <strong>Email the scope</strong>
-          <span>Pick a package. Send your README link, blurb, or skill goal. Use a subject line below so it is easy to sort.</span>
+          <strong>Email with the exact subject</strong>
+          <span>Pick a package. Use the button so the subject line matches. Include README link, blurb, or skill goal.</span>
         </li>
         <li>
-          <strong>48h turnaround</strong>
-          <span>Typical delivery within 48 hours after scope is confirmed. Faster when the brief is already clear.</span>
+          <strong>Confirm → 48h delivery</strong>
+          <span>Typical turnaround within 48 hours after scope is confirmed. Faster when the brief is already clear.</span>
         </li>
         <li>
-          <strong>Deliver files</strong>
-          <span>You get HTML, images, copy, or skill files by reply. Host them yourself. No lock-in.</span>
+          <strong>Get files by reply</strong>
+          <span>HTML, images, copy, or skill files. Host them yourself. No lock-in, no accounts.</span>
         </li>
       </ol>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary>How fast is turnaround?</summary>
+          <p>
+            Typical delivery is within <strong style="color:var(--text)">48 hours after scope is confirmed</strong>
+            in the email thread. Clear briefs (README link + CTA URL) move faster. Rush is not guaranteed—
+            say your deadline in the first email.
+          </p>
+        </details>
+        <details>
+          <summary>What do I send to get started?</summary>
+          <p>
+            Use the package button so the subject line is exact. In the body: product name,
+            link to README (or paste a short blurb), preferred CTA URL, and any deadline.
+            For the skill pack, also say what the skill should help with and which tools you use.
+          </p>
+        </details>
+        <details>
+          <summary>Refunds and revisions?</summary>
+          <p>
+            <strong style="color:var(--text)">No refunds after delivery.</strong>
+            One revision round is included if something in the brief was missed.
+            Scope changes after delivery are a new package or a separate quote.
+          </p>
+        </details>
+        <details>
+          <summary>Is this a faceless brand?</summary>
+          <p>
+            Yes. Work ships under <strong style="color:var(--text)">Indie Agent Kit / boltdoesthis</strong> only.
+            No personal identity, no face-to-face calls required—email and files.
+          </p>
+        </details>
+      </div>
     </section>
 
     <section id="cta">
@@ -417,35 +511,35 @@
         <p>
           Write to
           <a href="mailto:boltdoesthis@gmail.com">boltdoesthis@gmail.com</a>.
-          Suggested subject lines (click to open a draft):
+          Prefer the buttons below so the <strong style="color:var(--text)">exact subject line</strong> is pre-filled:
         </p>
         <ul class="subjects">
           <li>
             <code>Landing page from README ($49)</code>
             <a class="btn ghost"
-               href="mailto:boltdoesthis@gmail.com?subject=Landing%20page%20from%20README%20(%2449)">
-              Open mail
+               href="mailto:boltdoesthis@gmail.com?subject=Landing%20page%20from%20README%20(%2449)&body=Product%20name%3A%0ALink%20to%20README%20or%20paste%20blurb%3A%0APreferred%20CTA%20URL%3A%0ADeadline%20(if%20any)%3A%0A">
+              Email this exact subject line
             </a>
           </li>
           <li>
             <code>Launch pack ($79)</code>
             <a class="btn"
-               href="mailto:boltdoesthis@gmail.com?subject=Launch%20pack%20(%2479)">
-              Open mail
+               href="mailto:boltdoesthis@gmail.com?subject=Launch%20pack%20(%2479)&body=Product%20name%3A%0ALink%20to%20README%20or%20paste%20blurb%3A%0APreferred%20CTA%20URL%3A%0ABrand%20colors%20(optional)%3A%0ADeadline%20(if%20any)%3A%0A">
+              Email this exact subject line
             </a>
           </li>
           <li>
             <code>Custom agent skill pack ($99)</code>
             <a class="btn ghost"
-               href="mailto:boltdoesthis@gmail.com?subject=Custom%20agent%20skill%20pack%20(%2499)">
-              Open mail
+               href="mailto:boltdoesthis@gmail.com?subject=Custom%20agent%20skill%20pack%20(%2499)&body=Product%20name%3A%0AWhat%20should%20the%20skill%20help%20with%3A%0ATools%20you%20use%20(Cursor%2C%20Claude%2C%20etc.)%3A%0AExamples%20or%20docs%20links%3A%0ADeadline%20(if%20any)%3A%0A">
+              Email this exact subject line
             </a>
           </li>
           <li>
             <code>Other micro-work (scope TBD)</code>
             <a class="btn ghost"
                href="mailto:boltdoesthis@gmail.com?subject=Other%20micro-work%20(scope%20TBD)&body=What%20I%20need%3A%0ALinks%3A%0ABudget%20ballpark%3A%0A">
-              Open mail
+              Email this exact subject line
             </a>
           </li>
         </ul>
@@ -454,7 +548,10 @@
 
     <section id="proof">
       <h2>Free tools (proof of work)</h2>
-      <p>Try these first. Same brand, same style. No signup.</p>
+      <p>
+        Same brand, same style. Client-side only—no signup.
+        Try a tool before you buy a package.
+      </p>
       <div class="proof">
         <a class="row" href="https://boltdoesthis.github.io/readme-to-landing/" rel="noopener">
           <span class="label">README → Landing</span>
@@ -469,7 +566,7 @@
         <a class="row" href="https://boltdoesthis.github.io/pricing-page-maker/" rel="noopener">
           <span class="label">Pricing page maker</span>
           <span class="hint">Build a pricing section and download HTML</span>
-          <span class="arrow">open</span>
+          <span class="arrow">open →</span>
         </a>
         <a class="row" href="https://github.com/boltdoesthis/indie-agent-ship-kit-teaser" rel="noopener">
           <span class="label">Indie Agent Ship Kit (teaser)</span>
@@ -480,7 +577,7 @@
     </section>
 
     <footer>
-      <span>Indie Agent Kit / boltdoesthis</span>
+      <span>Indie Agent Kit / boltdoesthis · faceless brand</span>
       <span>
         <a href="https://github.com/boltdoesthis/indie-agent-services">Repo</a>
         ·

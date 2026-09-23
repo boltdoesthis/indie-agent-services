@@ -2,7 +2,7 @@
 
 Lead-capture site for **Indie Agent Kit** (`boltdoesthis`) paid micro-work.
 
-Ship landing pages and launch assets with agent-speed help. Clients email **boltdoesthis@gmail.com**. Fixed packages, honest indie rates, 48h turnaround after scope is clear.
+Landing pages and launch assets in ~48h after scope is clear. Clients email **boltdoesthis@gmail.com** with the exact package subject line. Fixed packages ($49 / $79 / $99). Faceless brand. FAQ on the live page covers turnaround, what to send, and refunds (no refunds after delivery; one revision).
 
 Live URL (after Pages deploy): https://boltdoesthis.github.io/indie-agent-services/
 
@@ -69,6 +69,7 @@ Then enable Pages on `main` / root.
 
 - https://boltdoesthis.github.io/readme-to-landing/
 - https://boltdoesthis.github.io/changelog-to-og/
+- https://boltdoesthis.github.io/pricing-page-maker/
 - https://github.com/boltdoesthis/indie-agent-ship-kit-teaser
 
 ## License
