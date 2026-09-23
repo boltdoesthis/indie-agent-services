@@ -2,9 +2,17 @@
 
 Lead-capture site for **Indie Agent Kit** (`boltdoesthis`) paid micro-work.
 
-Landing pages and launch assets in ~48h after scope is clear. Clients email **boltdoesthis@gmail.com** with the exact package subject line. Fixed packages ($49 / $79 / $99). Faceless brand. FAQ on the live page covers turnaround, what to send, and refunds (no refunds after delivery; one revision).
+Landing pages and launch assets in about 48h after scope is clear. Fixed packages ($49 / $79 / $99). Faceless brand. FAQ on the live page covers turnaround, what to send, and refunds (no refunds after delivery; one revision).
 
-Live URL (after Pages deploy): https://boltdoesthis.github.io/indie-agent-services/
+**Live demo:** https://boltdoesthis.github.io/indie-agent-services/
+
+## Need it done for you?
+
+Pick a package on the live page, then email with the exact subject line:
+
+Email: [boltdoesthis@gmail.com](mailto:boltdoesthis@gmail.com)
+
+Services page: https://boltdoesthis.github.io/indie-agent-services/
 
 ## Packages
 
@@ -44,20 +52,6 @@ Then visit `http://localhost:8080`.
 3. Settings → Pages → Deploy from branch → `main` / root (or `/docs`).
 4. Site URL: `https://boltdoesthis.github.io/indie-agent-services/`
 
-Example first push:
-
-```bash
-cd indie-agent-services
-git init
-git add index.html README.md
-git commit -m "Initial Indie Agent Services lead-capture page"
-git branch -M main
-git remote add origin https://github.com/boltdoesthis/indie-agent-services.git
-git push -u origin main
-```
-
-Then enable Pages on `main` / root.
-
 ### Cloudflare Pages
 
 1. Push the same repo to GitHub/GitLab.
@@ -78,4 +72,4 @@ MIT. Indie Agent Kit / boltdoesthis.
 
 ## Brand
 
-Public brand only: **Indie Agent Kit** / **boltdoesthis**. No personal identity in public copy.
+Public brand only: **Indie Agent Kit** / **boltdoesthis**.
